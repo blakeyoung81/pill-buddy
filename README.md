@@ -16,8 +16,10 @@ you very sick.
 
 ## Privacy in one line
 
-Pill Buddy collects nothing. No account, no analytics, no network requests.
-Everything stays in local storage on your iPhone.
+Pill Buddy has no account, no ads and no third-party trackers. Your pill history
+stays on your iPhone. Optional anonymous usage events (pill type, dose timing)
+are sent only while "Share anonymous usage data" is on, and can be turned off in
+Settings. Full policy: https://blakeyoung81.github.io/pill-buddy/#privacy
 
 ## Emergency
 
