@@ -1,27 +1,20 @@
-# Pill Buddy
+# Pip: Pill Tracker
 
-A daily birth control pill reminder for people taking isotretinoin (Accutane).
+A medication reminder that teaches you how each of your medications works, how
+to take it, and what to do when you miss a dose — with a reminder per dose that
+actually nags until you log it.
 
-**One pill. Once a day. At the same time.**
+**Support page and privacy policy:** https://blakeyoung81.github.io/pill-buddy/
+**Email:** blakeyoung81@gmail.com
 
-Pill Buddy exists because too many people on Accutane take their birth control
-incorrectly — most dangerously, swallowing an entire 28-pill pack in one day,
-believing it is a monthly dose. That does not prevent pregnancy, and it makes
-you very sick.
+## Privacy in three lines
 
-## Support & privacy
-
-- **Support page and privacy policy:** https://blakeyoung81.github.io/pill-buddy/
-- **Email:** blakeyoung81@gmail.com
-
-## Privacy in one line
-
-Pill Buddy has no account, no ads and no third-party trackers. Your pill history
-stays on your iPhone. Optional anonymous usage events (pill type, dose timing)
-are sent only while "Share anonymous usage data" is on, and can be turned off in
-Settings. Full policy: https://blakeyoung81.github.io/pill-buddy/#privacy
+No account, no ads, no third-party trackers. Your dose history stays on your
+iPhone. Optional anonymous usage events (medications, dose timing, and, if you
+allow it, birth year / sex at birth / time zone) are sent under a random ID only
+while "Share anonymous usage data" is on. Full policy at the link above.
 
 ## Emergency
 
-If you have taken more than one pill in a day, call your doctor or
+If you have taken more of a medication than prescribed, call your doctor or
 **Poison Control at 1-800-222-1222** (US, free, 24/7).
