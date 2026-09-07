@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Support, FAQ and privacy policy for Pill Buddy, a daily birth control pill reminder for people taking Accutane (isotretinoin).">
+<title>Pill Buddy — Support &amp; Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --pink:#FF5C8A;
+    --deep-pink:#D6336C;
+    --blush:#FFD6E2;
+    --soft-pink:#FFEEF3;
+    --cream:#FFF8FA;
+    --ink:#3B1F2B;
+    --ink-soft:#8A6675;
+    --mint:#2FBF71;
+    --danger:#E5383B;
+    --card-bg:#FFFFFF;
+    --card-border:rgba(59,31,43,0.08);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --pink:#FF6E9B;
+      --deep-pink:#FF8FB3;
+      --blush:#4A2233;
+      --soft-pink:#1E1116;
+      --cream:#160C10;
+      --ink:#FBE9EF;
+      --ink-soft:#C79AAC;
+      --mint:#4FE39A;
+      --danger:#FF6B6E;
+      --card-bg:#241419;
+      --card-border:rgba(255,214,226,0.08);
+    }
+  }
+  :root[data-theme="dark"]{
+    --pink:#FF6E9B;
+    --deep-pink:#FF8FB3;
+    --blush:#4A2233;
+    --soft-pink:#1E1116;
+    --cream:#160C10;
+    --ink:#FBE9EF;
+    --ink-soft:#C79AAC;
+    --mint:#4FE39A;
+    --danger:#FF6B6E;
+    --card-bg:#241419;
+    --card-border:rgba(255,214,226,0.08);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:linear-gradient(180deg, var(--soft-pink) 0%, var(--cream) 340px);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:56px 24px 96px;
+  }
+  header{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:40px;
+  }
+  .mark{
+    width:56px;height:56px;flex:none;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--pink), var(--deep-pink));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 20px rgba(214,51,108,0.28);
+  }
+  .mark svg{width:30px;height:30px;display:block;}
+  .brand-name{
+    font-family:'Baloo 2',system-ui,sans-serif;
+    font-weight:800;
+    font-size:26px;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .brand-sub{
+    margin:2px 0 0;
+    color:var(--ink-soft);
+    font-size:14px;
+    font-weight:500;
+  }
+
+  h1{
+    font-family:'Baloo 2',system-ui,sans-serif;
+    font-weight:700;
+    font-size:clamp(28px,4.4vw,36px);
+    line-height:1.15;
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+    margin:0 0 12px;
+  }
+  .lede{
+    font-size:16px;
+    line-height:1.65;
+    color:var(--ink-soft);
+    max-width:52ch;
+    margin:0 0 40px;
+  }
+
+  .card{
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    border-radius:20px;
+    padding:28px 28px 30px;
+    box-shadow:0 10px 30px rgba(59,31,43,0.06);
+  }
+  .card + .card{ margin-top:16px; }
+
+  .contact-card{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .contact-label{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--pink);
+    margin:0 0 6px;
+  }
+  .contact-email{
+    font-family:'Baloo 2',system-ui,sans-serif;
+    font-size:20px;
+    font-weight:700;
+    color:var(--ink);
+    text-decoration:none;
+  }
+  .contact-note{
+    color:var(--ink-soft);
+    font-size:14px;
+    margin:6px 0 0;
+  }
+  .email-btn{
+    flex:none;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 22px;
+    border-radius:999px;
+    background:linear-gradient(135deg, var(--pink), var(--deep-pink));
+    color:#fff;
+    font-weight:700;
+    font-size:14px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(214,51,108,0.30);
+    white-space:nowrap;
+  }
+
+  h2{
+    font-family:'Baloo 2',system-ui,sans-serif;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:44px 0 16px;
+  }
+
+  .faq-item + .faq-item{
+    border-top:1px solid var(--card-border);
+  }
+  .faq-item{ padding:20px 0; }
+  .faq-item:first-child{ padding-top:2px; }
+  .faq-item:last-child{ padding-bottom:2px; }
+  .faq-q{
+    font-weight:700;
+    font-size:15.5px;
+    margin:0 0 8px;
+    display:flex;
+    gap:10px;
+  }
+  .faq-q .num{
+    color:var(--pink);
+    font-variant-numeric:tabular-nums;
+    flex:none;
+  }
+  .faq-a{
+    margin:0 0 0 26px;
+    color:var(--ink-soft);
+    font-size:14.5px;
+    line-height:1.65;
+  }
+  .faq-a strong{ color:var(--ink); font-weight:600; }
+
+  .safety-strip{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    background:var(--soft-pink);
+    border:1px solid var(--card-border);
+    border-radius:16px;
+    padding:18px 20px;
+    margin-top:16px;
+  }
+  :root[data-theme="dark"] .safety-strip,
+  @media (prefers-color-scheme: dark){ }
+  .safety-strip .dot{
+    flex:none;
+    width:8px;height:8px;
+    margin-top:7px;
+    border-radius:50%;
+    background:var(--danger);
+  }
+  .safety-strip p{
+    margin:0;
+    font-size:14px;
+    line-height:1.6;
+    color:var(--ink);
+  }
+  .safety-strip a{ color:var(--deep-pink); font-weight:600; }
+
+  .priv p{
+    font-size:14.5px;
+    line-height:1.7;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+  }
+  .priv p:last-child{ margin-bottom:0; }
+  .priv strong{ color:var(--ink); font-weight:600; }
+  .priv a{ color:var(--deep-pink); font-weight:600; }
+
+  footer{
+    margin-top:56px;
+    padding-top:24px;
+    border-top:1px solid var(--card-border);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+    font-size:12.5px;
+    color:var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="mark">
+      <svg viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="38" height="18" rx="9" fill="#FFF7F9"/>
+        <path d="M10 1H20V19H10C4.47715 19 0 14.5228 0 10C0 5.47715 4.47715 1 10 1Z" fill="#D6336C"/>
+        <rect x="1" y="1" width="38" height="18" rx="9" stroke="#3B1F2B" stroke-opacity="0.12" stroke-width="1.4"/>
+        <circle cx="26.2" cy="7.6" r="1.6" fill="#3B1F2B"/>
+        <circle cx="31.6" cy="7.6" r="1.6" fill="#3B1F2B"/>
+        <path d="M25.5 12.4C26.8 14 30.7 14 32.2 12.4" stroke="#3B1F2B" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <p class="brand-name">Pill Buddy</p>
+      <p class="brand-sub">Support &amp; contact</p>
+    </div>
+  </header>
+
+  <h1>Questions, bugs, or feedback — we read every message.</h1>
+  <p class="lede">Pill Buddy is a small, independent app built to help people on isotretinoin take their birth control correctly. If something's broken, confusing, or missing, email us — a real person answers.</p>
+
+  <div class="card contact-card">
+    <div>
+      <p class="contact-label">Email support</p>
+      <a class="contact-email" href="mailto:blakeyoung81@gmail.com">blakeyoung81@gmail.com</a>
+      <p class="contact-note">Typical reply time: 1–2 business days.</p>
+    </div>
+    <a class="email-btn" href="mailto:blakeyoung81@gmail.com?subject=Pill%20Buddy%20support">
+      Email us
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+  <h2>Common questions</h2>
+  <div class="card">
+    <div class="faq-item">
+      <p class="faq-q"><span class="num">01</span> Is Pill Buddy medical advice?</p>
+      <p class="faq-a">No. Pill Buddy is an educational reminder app, not a medical device. It doesn't diagnose, treat, or replace your prescriber, pharmacist, or the paper insert that came with your pill pack. When in doubt, call your pharmacist — they answer this exact question every day.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q"><span class="num">02</span> Does Pill Buddy collect or share my data?</p>
+      <p class="faq-a">No. Everything — your pill type, pack start date, and history — stays on your device in local storage. There's no account, no analytics, no server, and nothing is ever sent anywhere.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q"><span class="num">03</span> My reminder didn't fire. What do I check?</p>
+      <p class="faq-a">Open <strong>Settings → Notifications</strong> in Pill Buddy first — if it says "Off," go to iPhone <strong>Settings → Pill Buddy → Notifications</strong> and allow alerts, sounds, and banners. Reminders are scheduled locally on your device, so Low Power Mode and background refresh restrictions can occasionally delay them.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q"><span class="num">04</span> I picked the wrong pill type or pack start date. Can I fix it?</p>
+      <p class="faq-a">Yes — go to <strong>Settings → Your Pill</strong> to change your pill type, brand name, or reminder time at any time. To correct your pack start date or fix a day you marked by mistake, use <strong>My Pack</strong> and tap the day in question.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q"><span class="num">05</span> How do I delete my data?</p>
+      <p class="faq-a">Go to <strong>Settings → Reset Everything</strong> to erase your history and start over, or simply delete the app — since nothing leaves your device, that removes everything permanently.</p>
+    </div>
+  </div>
+
+  <div class="safety-strip">
+    <span class="dot"></span>
+    <p>If you've taken more than one pill in a day, call your doctor or <strong>Poison Control at 1-800-222-1222</strong> (US, free, 24/7) — this page and the app are not a substitute for that call.</p>
+  </div>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <div class="card priv">
+    <p><strong>Last updated: September 7, 2026.</strong></p>
+    <p><strong>Pill Buddy does not collect, transmit, or store any personal data on any server.</strong> The app has no account system, no analytics, no advertising, no third-party SDKs, and makes no network requests.</p>
+    <p><strong>What the app stores.</strong> Your pill type, optional brand name, reminder time, pack start date, and the days you mark as taken are saved only in your device's local storage. This information never leaves your iPhone and is not visible to the developer or anyone else.</p>
+    <p><strong>Notifications.</strong> If you allow notifications, reminders are scheduled locally by iOS on your device. No notification content passes through any external service.</p>
+    <p><strong>Health data.</strong> Pill Buddy does not read from or write to Apple Health, and never requests access to it.</p>
+    <p><strong>Children.</strong> The app is not directed at children under 13, and collects no data from anyone.</p>
+    <p><strong>Deleting your data.</strong> Use Settings &rarr; Reset everything inside the app, or delete the app from your iPhone. Either one permanently removes everything stored.</p>
+    <p><strong>Changes.</strong> If this policy changes, the updated version will be posted on this page with a new date.</p>
+    <p><strong>Contact.</strong> Questions about privacy: <a href="mailto:blakeyoung81@gmail.com">blakeyoung81@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    <span>Pill Buddy — an independent, single-purpose app.</span>
+    <span>No account. No tracking. Nothing sent anywhere.</span>
+  </footer>
+</div>
+</body>
+</html>
